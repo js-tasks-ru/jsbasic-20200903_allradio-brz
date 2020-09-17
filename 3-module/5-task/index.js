@@ -8,9 +8,7 @@ function getMinMax(str) {
     .split(",")
     .join(" ")
     .split(" ")
-    .filter((item) => parseFloat(item))
-    .map((item) => parseFloat(item));
-
+    .filter((item) => parseFloat(item));
   return {
     min: Math.min(...sortArr),
     max: Math.max(...sortArr),
