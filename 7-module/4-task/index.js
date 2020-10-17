@@ -92,6 +92,7 @@ export default class StepSlider {
 
   getValueSlider(event, steps) {
     let slider = this.elem;
+
     if (event.currentTarget == slider) {
       let domRectSlider = slider.getBoundingClientRect();
       let widthSlider = domRectSlider.width;
