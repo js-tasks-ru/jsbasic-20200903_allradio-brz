@@ -16,7 +16,6 @@ describe('8-module-1-task', () => {
           max-width: 988px;
           margin: 0 auto;
         }
-
         .cart-icon {
           display: none;
           position: absolute;
@@ -28,13 +27,11 @@ describe('8-module-1-task', () => {
           cursor: pointer;
           transition: all 0.5s ease;
         }
-
         .cart-icon.shake {
           animation: cartshake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
           backface-visibility: hidden;
           transform-origin: top right;
         }
-
         .cart-icon__inner {
           background: url("/assets/images/icons/cart-icon.svg") center no-repeat;
           background-size: cover;
@@ -47,11 +44,9 @@ describe('8-module-1-task', () => {
           align-items: center;
           padding-right: 3px;
         }
-
         .cart-icon_visible {
           display: block;
         }
-
         .cart-icon__count {
           font-size: 26px;
           line-height: 1.1;
@@ -59,7 +54,6 @@ describe('8-module-1-task', () => {
           color: var(--color-pink);
           margin-top: 16px;
         }
-
         .cart-icon__price {
           font-size: 11px;
           line-height: 1.1;
@@ -67,7 +61,6 @@ describe('8-module-1-task', () => {
           color: var(--color-black);
           margin: 0;
         }
-
         @media all and (max-width: 767px) {
           .cart-icon {
             position: fixed;
@@ -76,7 +69,6 @@ describe('8-module-1-task', () => {
             transform: none;
             z-index: 95;
           }
-
           .cart-icon:before {
             content: "";
             position: absolute;
@@ -87,13 +79,11 @@ describe('8-module-1-task', () => {
             border-top-color: var(--color-pink);
             z-index: 1;
           }
-
           .cart-icon__inner {
             position: relative;
             z-index: 2;
           }
         }
-
       </style>
     `);
 
@@ -102,7 +92,6 @@ describe('8-module-1-task', () => {
       <header class="header container">
         <h1 class="heading logo">Бангкок Экспресс</h1>
         <h3 class="subheading">Отличная еда・Бесплатная доставка・Лучшие цены</h3>
-
         <div data-cart-icon-holder>
           <!--СЮДА ВСТАВЛЯЕТСЯ CART-ICON-->
         </div>
